@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="4000px"
+   height="4000px"
+   viewBox="0 0 4000 4000"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="rajz.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <defs
+     id="defs10">
+    <rect
+       x="2130.8771"
+       y="657.18808"
+       width="280.45667"
+       height="81.496325"
+       id="rect170" />
+    <rect
+       x="1334.5367"
+       y="646.43696"
+       width="406.35445"
+       height="73.837564"
+       id="rect164" />
+    <rect
+       x="652.39768"
+       y="303.6138"
+       width="476.38772"
+       height="149.88225"
+       id="rect65" />
+    <rect
+       x="652.39771"
+       y="303.6138"
+       width="476.38773"
+       height="149.88225"
+       id="rect65-3" />
+    <rect
+       x="652.39771"
+       y="303.6138"
+       width="476.38773"
+       height="149.88225"
+       id="rect78" />
+    <rect
+       x="652.39771"
+       y="303.6138"
+       width="476.38773"
+       height="149.88225"
+       id="rect65-3-9" />
+    <rect
+       x="652.39771"
+       y="303.6138"
+       width="476.38773"
+       height="149.88225"
+       id="rect113" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="876.80669"
+     inkscape:cy="190.44193"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="3767"
+     inkscape:window-height="1040"
+     inkscape:window-x="68"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g185"
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+      <rect
+         style="fill:#cccccc;stroke:none;stroke-width:1.18032;stroke-linecap:round"
+         id="rect25-5"
+         width="632.69824"
+         height="168.59273"
+         x="1280.5085"
+         y="399.30768"
+         ry="33.357403" />
+      <rect
+         style="fill:#f2f2f2;stroke:none;stroke-width:0.8;stroke-linecap:round"
+         id="rect23-6"
+         width="632.92657"
+         height="269.16568"
+         x="1280.3036"
+         y="219.85323"
+         ry="15.30087" />
+      <text
+         xml:space="preserve"
+         id="text63-2"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect65-3);fill:#000000;fill-opacity:1;stroke:none;"
+         transform="translate(884.42698,37.427053)"><tspan
+           x="652.39844"
+           y="339.00391"><tspan>Gomb</tspan></tspan></text>
+    </g>
+    <g
+       id="g178"
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+      <rect
+         style="fill:#666666;stroke:none;stroke-width:1.18056;stroke-linecap:round"
+         id="rect25"
+         width="632.95435"
+         height="168.59273"
+         x="572.10736"
+         y="401.26019"
+         ry="33.357403" />
+      <rect
+         style="fill:#cccccc;stroke:none;stroke-width:0.8;stroke-linecap:round"
+         id="rect23"
+         width="632.92657"
+         height="269.16568"
+         x="572.15851"
+         y="221.80574"
+         ry="15.30087" />
+      <text
+         xml:space="preserve"
+         id="text63"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect65);fill:#000000;fill-opacity:1;stroke:none;"
+         transform="translate(176.28195,39.379564)"><tspan
+           x="652.39844"
+           y="339.00391"><tspan>Gomb</tspan></tspan></text>
+    </g>
+    <g
+       id="g192"
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+      <rect
+         style="fill:#cccccc;stroke:none;stroke-width:1.1805;stroke-linecap:round"
+         id="rect25-5-1"
+         width="632.88684"
+         height="168.59273"
+         x="2018.015"
+         y="399.18661"
+         ry="33.357403" />
+      <rect
+         style="fill:#f2f2f2;stroke:none;stroke-width:0.8;stroke-linecap:round"
+         id="rect23-6-2"
+         width="632.92657"
+         height="269.16568"
+         x="2017.9988"
+         y="258.65948"
+         ry="15.30087" />
+      <text
+         xml:space="preserve"
+         id="text63-2-7"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect65-3-9);fill:#000000;fill-opacity:1;stroke:none;"
+         transform="translate(1622.1221,76.233344)"><tspan
+           x="652.39844"
+           y="339.00391"><tspan>Gomb</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.70194px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.242548"
+       x="133.52667"
+       y="184.61099"
+       id="text160"><tspan
+         sodipodi:role="line"
+         id="tspan158"
+         x="133.52667"
+         y="184.61099"
+         style="stroke-width:0.242548">Normal</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text162"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect164);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="matrix(0.24254846,0,0,0.24254846,3.4079956,18.547729)"><tspan
+         x="1334.5371"
+         y="681.82812"><tspan>Hover</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text168"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect170);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="matrix(0.24254846,0,0,0.24254846,-18.492104,16.238779)"><tspan
+         x="2130.877"
+         y="692.57812"><tspan>Pressed</tspan></tspan></text>
+  </g>
+</svg>
