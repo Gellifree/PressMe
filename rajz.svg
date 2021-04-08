@@ -66,18 +66,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="876.80669"
-     inkscape:cy="190.44193"
+     inkscape:zoom="1.4"
+     inkscape:cx="425.39513"
+     inkscape:cy="212.06292"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="3767"
-     inkscape:window-height="1040"
-     inkscape:window-x="68"
-     inkscape:window-y="27"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata13">
     <rdf:RDF>
@@ -96,7 +96,10 @@
      id="layer1">
     <g
        id="g185"
-       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)"
+       inkscape:export-filename="/home/norbert/Asztal/teszt2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          style="fill:#cccccc;stroke:none;stroke-width:1.18032;stroke-linecap:round"
          id="rect25-5"
@@ -123,13 +126,16 @@
     </g>
     <g
        id="g178"
-       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)"
+       inkscape:export-filename="/home/norbert/Asztal/teszt.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
-         style="fill:#666666;stroke:none;stroke-width:1.18056;stroke-linecap:round"
+         style="fill:#666666;stroke:none;stroke-width:1.18041;stroke-linecap:round"
          id="rect25"
-         width="632.95435"
+         width="632.79761"
          height="168.59273"
-         x="572.10736"
+         x="572.2641"
          y="401.26019"
          ry="33.357403" />
       <rect
@@ -150,7 +156,10 @@
     </g>
     <g
        id="g192"
-       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)">
+       transform="matrix(0.24254846,0,0,0.24254846,-51.742004,18.547729)"
+       inkscape:export-filename="/home/norbert/Asztal/teszt3.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <rect
          style="fill:#cccccc;stroke:none;stroke-width:1.1805;stroke-linecap:round"
          id="rect25-5-1"
