@@ -14,19 +14,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchor_bottom = 1.0
-margin_right = 308.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TextureButton" type="TextureButton" parent="."]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_top = -42.0
-margin_right = 155.0
-margin_bottom = 42.0
+margin_left = 422.046
+margin_top = -92.5108
+margin_right = 577.046
+margin_bottom = -8.5108
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
