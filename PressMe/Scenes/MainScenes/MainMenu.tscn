@@ -1,26 +1,17 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Control" type="Control"]
+[ext_resource path="res://Scenes/MainScenes/MainMenu.gd" type="Script" id=1]
+
+[node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -52.8411
-margin_top = 266.464
-margin_right = 45.1589
-margin_bottom = 286.464
-text = "BEÁLLÍTÁSOK"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button4" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -52.8411
@@ -32,7 +23,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="."]
+[node name="OptionsButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -52.8411
+margin_top = 266.464
+margin_right = 45.1589
+margin_bottom = 286.464
+text = "BEÁLLÍTÁSOK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -35.4648
@@ -43,3 +46,6 @@ text = "KILÉPÉS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
