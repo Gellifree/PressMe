@@ -1,3 +1,40 @@
-[gd_scene format=2]
+[gd_scene load_steps=12 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://Scenes/Assets/Player.gd" type="Script" id=1]
+[ext_resource path="res://Images/Sprites/Hero/lIdle_0.png" type="Texture" id=2]
+[ext_resource path="res://Images/Sprites/Hero/rJump_0.png" type="Texture" id=5]
+[ext_resource path="res://Images/Sprites/Hero/lIdle_2.png" type="Texture" id=6]
+[ext_resource path="res://Images/Sprites/Hero/lIdle_3.png" type="Texture" id=7]
+[ext_resource path="res://Images/Sprites/Hero/rJump_1.png" type="Texture" id=8]
+[ext_resource path="res://Images/Sprites/Hero/lIdle_1.png" type="Texture" id=9]
+[ext_resource path="res://Images/Sprites/Hero/rJump_3.png" type="Texture" id=10]
+[ext_resource path="res://Images/Sprites/Hero/rJump_2.png" type="Texture" id=11]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 14.7048
+height = 19.8022
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Run",
+"speed": 20.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.441045, 12.103 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 3, 3 )
+frames = SubResource( 2 )
+animation = "Idle"

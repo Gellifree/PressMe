@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lIdle_2.png-29734a4bc9bcaaf742caecd885d07ceb.stex"
+path="res://.import/fHeroHand_.png-09a57981192a01282df6ad037b55e27d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Sprites/Hero/lIdle_2.png"
-dest_files=[ "res://.import/lIdle_2.png-29734a4bc9bcaaf742caecd885d07ceb.stex" ]
+source_file="res://Images/Sprites/Hero/fHeroHand_.png"
+dest_files=[ "res://.import/fHeroHand_.png-09a57981192a01282df6ad037b55e27d.stex" ]
 
 [params]
 
