@@ -1,0 +1,45 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -52.8411
+margin_top = 266.464
+margin_right = 45.1589
+margin_bottom = 286.464
+text = "BEÁLLÍTÁSOK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -52.8411
+margin_top = 224.934
+margin_right = 45.1589
+margin_bottom = 244.934
+text = "INDÍTÁS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -35.4648
+margin_top = 302.424
+margin_right = 25.5352
+margin_bottom = 322.424
+text = "KILÉPÉS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
