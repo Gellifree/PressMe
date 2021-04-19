@@ -12,8 +12,7 @@
  - Küldetések procedurális generálása (szintezés) (X)
 
 ## Skill tree tervezés, alapok
-
-
+```
 alapszabályai a játéknak a skillek értelmezéséhez:
     a játék célja az, hogy minél nagyobb rekordot érjünk el a pénzünk egyszeri értékével
     minden percben adózunk a pénzünk aktuális értéke után
@@ -66,3 +65,47 @@ skillek
 
     speciális
         mozgás, védekezés, támadás, nyereség, veszteség fülek alatt külön, külön minden egy arannyal olcsóbb
+```
+
+
+## Boss alapkoncepciók
+
+A következőkben a harcok alapkoncepciói lesznek láthatóak. A tervek módosíthatóak, funkciók elvethetőek vagy hozzáadhatóak, az egyszerűség irányvonalát elsődleges célkitűzésként figyelembe véve.
+
+
+### 1.
+
+Egy nagy Gomba karakter, aki nem képes mozogni
+
+Támadásai:
+ - Ötágú csillag alakzatban lövedékek kilövése
+ - területi sebzés maga körül, pár másodperces "méreg" felhő
+
+Védekezései:
+ - Sebzés esetén, kis feltöltődési idő után, ellök bennünket, sebzéssel
+
+### 2.
+
+Egy nagy sárgombóc, aki nagyon lassan mozog.
+
+Támadásai:
+ - Egy vonalban kilő egy viszonylag gyorsabban mozgó lövedéket, akár többet is a játékos felé.
+ - Eldob egy mini sárszörnyet, aki megpróbál elkapni minket
+
+Védekezései:
+ - Az első ütés amit kap, azt teljesen elnyeli a "pajzsa", töltési ideje pár másodperc. (mint malphite passzív)
+ - Sebzés esetén, mozgási sebessége nő, és megpróbál arébb menni
+ - 20%(?) életerő alatt, a pajzs megváltozik tüskékké, amik visszatükröznek valamennyi sebzést, két ütés kell a tüskék elpusztításához, és a sebzés felét nyelik csak el
+
+### 3.
+
+Egy életre kelt farönk, "alapból" mozgásképtelen
+
+Támadásai:
+ - Ostor szerűen a földre csap egy vonalban (mint illaoi)
+ - Tud gurulni egy irányba, ami ha eltalál kritikus sebzést okoz
+ - Képes gyökereket előhívni a földből, amik fennmaradnak x másodpercig, és az ostor szerű támadást ismétlik, kisebb hatótávval, és sebzéssel
+
+Védekezései:
+ - Képes gyógyítani magát időközönként, "legyökerezik", nem gurulhat el eközben
+ - 20%(?) életerő alatt, kettéhasad, két kis életerejű mini boss-ra, a mini bossok csak a csáp támadást tudják
