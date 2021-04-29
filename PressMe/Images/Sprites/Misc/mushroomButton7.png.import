@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fHero_.png-cb45d92dd9150e986d05587a3957c3ec.stex"
+path="res://.import/mushroomButton7.png-e01717634788248d62a11dd1ddeb263b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sounds/fHero_.png"
-dest_files=[ "res://.import/fHero_.png-cb45d92dd9150e986d05587a3957c3ec.stex" ]
+source_file="res://Images/Sprites/Misc/mushroomButton7.png"
+dest_files=[ "res://.import/mushroomButton7.png-e01717634788248d62a11dd1ddeb263b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

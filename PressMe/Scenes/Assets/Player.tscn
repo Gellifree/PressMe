@@ -24,9 +24,8 @@ animations = [ {
 "speed": 20.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 14.7048
-height = 19.8022
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 14.6257, 16.4341 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -49,8 +48,5 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.441049, -0.680992 )
+position = Vector2( 0.499317, 12.0591 )
 shape = SubResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
