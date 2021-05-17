@@ -4,7 +4,7 @@
 
  - Ugrálás/mozgás (gomb) (X)
  - Pénz, vásárlás dolgok pénzért (X)
- - Boss fightok, támadó gomb (X)
+ - Boss fightok (X)
  - Küldetések, Több küldetés, választás, időhatár, valamilyen jutalom (X)
  - streak (nXcombó) (X)
  - Ingame stamina (X)
@@ -109,3 +109,77 @@ Támadásai:
 Védekezései:
  - Képes gyógyítani magát időközönként, "legyökerezik", nem gurulhat el eközben
  - 20%(?) életerő alatt, kettéhasad, két kis életerejű mini boss-ra, a mini bossok csak a csáp támadást tudják
+
+
+## Skill tree tervezés, alapok
+
+- Defensive potions:3.,4.,5.,8.,13.,14.
+- Offensive potions: 1.,7.,10.,12.
+- Loot potions: 2.,6.,9.,11.
+
+
+
+- 1. Speed potion: 25%-al gyorsabb lesz a movement speeded
+- 2. Luck potion: 2-szer annyi % esély lesz a boss lootok megkapására
+- 3. Heart potion: +1 életed lesz
+- 4. Shield potion: A csata során elhasználhatod és utána 15 mp-ig ha sebződsz csak a pajzsod tűnik el és nem vesztessz életet
+- 5. Digger potion: Csata során 1-el több lyukat áshatsz
+- 6. Coin potion: Ha megsebzel valamit a bossfight során kapsz pénzt
+- 7. Giant potion: 25%-kal nagyobb a hitboxod és te, de 25%-kal nagyobbat sebzel
+- 8. Teleportation potion: Ha a csata során elhasználod, utána 30 mp-ig max háromszor ahova kattintasz a kurzorral oda tp-zel
+- 9. Pain potion: A bossnak 2x annyi élete lesz és 20%-kal gyorsabbak lesznek a bulletek, de 2x annyi pénz és lootot kapsz a csata végén
+- 10. Ninja potion: 2 mp-enként abba az irányba amerre legutoljára mozogtál ellő egy Shurikent
+-----Shuriken: A pálya széléig repül egyenesen, és akkorát sebez mint te
+- 11. Chest potion: A csata során random időben lerak 3 chestet 5 hp-val valahol a pályán, amit ha megölsz kapsz pénzt + vmi lootot
+- 12. Rage potion: Ha elég sokszor megütöd a bosst elég gyorsan akkor átváltasz Rage módba 10 mp-ig: +10% sebzés +10% Movement speed +20%-kal gyorsabban tudsz ütni
+- 13. Reincarnation potion: Ha elfogy az életed, újra éledsz egy csirkeként(alap movement speed, 1 élet, a többi potion hatása megszünik, nem tudsz a rendes fegyvereddel sebezni, 3 mp-ként kilősz egy tojást a veled ellentétes irányba)
+-----Tojás: A pály széléig repül, 1-et sebez, lassabb mint a Shuriken
+- 14. Matrix potion: A boss és a bulletei 25%-kal lassabbak lesznek
+
+Alapból egy potiont vihetsz a csatába, de a skill treen fel lehet fejleszteni 3-ig
+
+
+
+
+## itemek
+- nike air zoom aphafly next% flyknit - movement speed +
+- gördeszka - movement speed ++
+- légdeszka - movement speed +++
+
+- ásó - lyuk időtartama és használásának száma +
+- ütvefúró - lyuk időtartama és használásának száma ++
+- markológép - lyuk időtartama és használásának száma +++
+
+- Pistike fapajzsa - pajzs időtartama +
+- armor suit powered by nokia - pajzs időtartama ++
+- tankpáncéldarab - pajzs időtartama +++
+
+- rosdás bökő - sebzés +
+- extasy - sebzés ++
+- sárkányvér az erekben - sebzés +++
+
+- lóhere - szerencse +
+- Mari néni rózsafűzére - szerencse ++
+- kéményseprű - szerencse +++
+
+- japán samurai - passzív sebzés +
+- középkori nyilasság - passzív sebzés ++
+- artilery support - psszív sebzés +++
+- infinity glove - passzív sebzés ++++
+
+- szögek - enemy rage & loot +
+- poloskaraj - enemy rage & loot ++
+- nokia 3310 - enemy rage & loot +++
+
+- malacpersely - minden olcsóbb +
+- áfamentesség - minden olcsóbb ++
+- hamispénz - minden olcsóbb +++
+
+#### unique itemek
+
+- mérgező nyílhegyek - poison effect
+- pillanatragasztó - lassítás effect
+- felelőtlen cigicsikk - tűz effect
+- "erősebb a láncnál a kard" - gyengítés effect
+- jobb horog/knock out- kábítás effect
+- őserdei indák - mozgásképtelenség effect
