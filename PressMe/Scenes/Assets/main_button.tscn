@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Images/Sprites/Misc/Button_hover.png" type="Texture" id=1]
+[ext_resource path="res://Images/Sprites/Misc/Button_idle.png" type="Texture" id=2]
+[ext_resource path="res://Images/Sprites/Misc/Button_pressed.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 28.6267, 42.766 )
+
+[node name="Area2D" type="StaticBody2D"]
+
+[node name="test_button" type="TextureButton" parent="."]
+margin_left = -41.2162
+margin_top = -46.2433
+margin_right = 44.7838
+margin_bottom = 40.7567
+focus_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 1 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.78381, 8.91602 )
+rotation = 1.57672
+shape = SubResource( 1 )

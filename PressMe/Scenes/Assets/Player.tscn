@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Assets/Player.gd" type="Script" id=1]
 [ext_resource path="res://Images/Sprites/Hero/MaleHero/rJump_1.png" type="Texture" id=2]
@@ -10,24 +10,27 @@
 [ext_resource path="res://Images/Sprites/Hero/MaleHero/rJump_0.png" type="Texture" id=8]
 [ext_resource path="res://Images/Sprites/Hero/MaleHero/rJump_2.png" type="Texture" id=9]
 [ext_resource path="res://Images/Sprites/Hero/Shadow.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Assets/Tool.tscn" type="PackedScene" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 8.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "Run",
 "speed": 20.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 8.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 14.6257, 16.4341 )
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=[
+"Player",
+]]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -49,4 +52,11 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.499317, 12.0591 )
+rotation = -0.0161861
 shape = SubResource( 2 )
+
+[node name="Tool" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 0.807161, 0.7862 )
+rotation = 0.02458
+scale = Vector2( 0.90758, 0.90758 )

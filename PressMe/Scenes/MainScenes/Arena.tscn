@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/Assets/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/MainScenes/Arena.gd" type="Script" id=2]
@@ -7,6 +7,10 @@
 [ext_resource path="res://Images/Tiles/Dungeon Collectables.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Assets/MushroomButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Assets/Mud.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Images/Sprites/Misc/Button_hover.png" type="Texture" id=8]
+[ext_resource path="res://Images/Sprites/Misc/Button_idle.png" type="Texture" id=9]
+[ext_resource path="res://Images/Sprites/Misc/Button_pressed.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Assets/Mission.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "ground.png 0"
@@ -376,6 +380,9 @@
 17/shapes = [  ]
 17/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 47.93, 32.2868 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -416,12 +423,98 @@ __meta__ = {
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Mud" parent="YSort" instance=ExtResource( 7 )]
+visible = false
 position = Vector2( 542.185, 147.183 )
 
 [node name="Mushroom" parent="YSort" instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 765.271, 249.928 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 450.747, 266.593 )
 
+[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
+visible = false
+position = Vector2( -2.10504, -1.18784 )
+zoom = Vector2( 0.7, 0.7 )
+
+[node name="test_button" type="TextureButton" parent="YSort"]
+margin_left = 492.0
+margin_top = 259.0
+margin_right = 589.0
+margin_bottom = 357.0
+focus_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 8 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort/test_button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/test_button/StaticBody2D"]
+position = Vector2( 48.3287, 61.5764 )
+shape = SubResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1.0
+margin_top = 461.0
+margin_right = 174.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoneyLabel" type="Label" parent="."]
+margin_left = 8.81946
+margin_top = 509.008
+margin_right = 67.8195
+margin_bottom = 523.008
+rect_scale = Vector2( 1.7, 1.7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Money: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tax_timer" type="Label" parent="."]
+margin_left = 8.1895
+margin_top = 480.66
+margin_right = 67.1895
+margin_bottom = 494.66
+rect_scale = Vector2( 1.7, 1.7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hitpoints" type="Label" parent="."]
+margin_left = 8.81946
+margin_top = 538.44
+margin_right = 83.8195
+margin_bottom = 552.44
+rect_scale = Vector2( 1.7, 1.7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hitpoints: 0"
+
+[node name="Stamina" type="Label" parent="."]
+margin_left = 8.81946
+margin_top = 569.141
+margin_right = 91.8195
+margin_bottom = 583.141
+rect_scale = Vector2( 1.7, 1.7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Stamina: 100"
+
+[node name="Mission" parent="." instance=ExtResource( 11 )]
+margin_left = 554.278
+margin_top = 523.722
+margin_right = 7.2782
+margin_bottom = -33.2775
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="YSort/test_button" to="." method="_on_test_button_pressed"]

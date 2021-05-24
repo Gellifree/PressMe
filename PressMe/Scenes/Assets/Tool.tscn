@@ -1,9 +1,90 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Images/Sprites/Tools/hammer_.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Assets/Tool.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Assets/WeaponHitbox.gd" type="Script" id=3]
+
+[sub_resource type="Animation" id=2]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.7, 1 ),
+"transitions": PoolRealArray( 0.466516, 0.406126, 0.297302, 1.41421, 1.27456 ),
+"update": 0,
+"values": [ -1.16127, -26.9225, -1.13996, 156.457, -0.629429 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 0.307786, 0.732043 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 0.25, 0.353553, 0.241484 ),
+"update": 0,
+"values": [ -0.197005, -5.88986, 2.64774 ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10.8966, 29.9245 )
 
 [node name="Tool" type="Node2D"]
+position = Vector2( 0.668175, -0.22271 )
+rotation = -0.0221426
+script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Animation" type="Node2D" parent="."]
+rotation = -0.0109856
+scale = Vector2( 1, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animation"]
+anims/attack = SubResource( 2 )
+anims/idle = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Animation"]
+rotation = 0.0159771
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
+offset = Vector2( 0.309548, -3.31376 )
+
+[node name="Area2D" type="Area2D" parent="Animation"]
+rotation = -1.86265e-09
+scale = Vector2( 1, 1 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Animation/Area2D"]
+position = Vector2( 0.44545, -10.2453 )
+shape = SubResource( 3 )
