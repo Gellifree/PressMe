@@ -17,6 +17,14 @@ _global_script_class_icons={
 config/name="PressMe"
 run/main_scene="res://Scenes/MainScenes/MainMenu.tscn"
 
+[autoload]
+
+PlayerVariables="*res://Scenes/MainScenes/PlayerVariables.tscn"
+
+[global]
+
+visible=false
+
 [input]
 
 move_up={
@@ -41,6 +49,11 @@ move_right={
  ]
 }
 attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ERROR_TESTING={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]

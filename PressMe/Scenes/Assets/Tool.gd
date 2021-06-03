@@ -1,13 +1,16 @@
 extends Node2D
 
 signal attack_finnished
+
 export(int) var damage = 1
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 
 func _process(delta):
 	pass
 
+func _on_AnimationPlayer_animation_finished(anim_name):
+	PlayerVariables.finnished = true
+	PlayerVariables.once = false

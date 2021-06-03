@@ -4,7 +4,7 @@
 [ext_resource path="res://Scenes/Assets/Tool.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Assets/WeaponHitbox.gd" type="Script" id=3]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "attack"
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -31,8 +31,7 @@ tracks/1/keys = {
 "values": [ -1.16127, -26.9225, -1.13996, 156.457, -0.629429 ]
 }
 
-[sub_resource type="Animation" id=1]
-resource_name = "idle"
+[sub_resource type="Animation" id=2]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -59,7 +58,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 10.8966, 29.9245 )
+extents = Vector2( 2.73279, 7.43949 )
 
 [node name="Tool" type="Node2D"]
 position = Vector2( 0.668175, -0.22271 )
@@ -67,12 +66,11 @@ rotation = -0.0221426
 script = ExtResource( 2 )
 
 [node name="Animation" type="Node2D" parent="."]
-rotation = -0.0109856
-scale = Vector2( 1, 1 )
+rotation = 2.46346
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animation"]
-anims/attack = SubResource( 2 )
-anims/idle = SubResource( 1 )
+anims/attack = SubResource( 1 )
+anims/idle = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Animation"]
 rotation = 0.0159771
@@ -80,11 +78,13 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
 offset = Vector2( 0.309548, -3.31376 )
 
-[node name="Area2D" type="Area2D" parent="Animation"]
-rotation = -1.86265e-09
-scale = Vector2( 1, 1 )
+[node name="Area2D" type="KinematicBody2D" parent="Animation"]
+rotation = 0.00928237
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Animation/Area2D"]
-position = Vector2( 0.44545, -10.2453 )
+position = Vector2( 13.2852, -29.4303 )
+rotation = -3.72529e-09
 shape = SubResource( 3 )
+
+[connection signal="animation_finished" from="Animation/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

@@ -26,7 +26,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 14.6257, 16.4341 )
+extents = Vector2( 14.6257, 13.4047 )
 
 [node name="Player" type="KinematicBody2D" groups=[
 "Player",
@@ -35,6 +35,10 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Tool" parent="." instance=ExtResource( 11 )]
+position = Vector2( 12.8711, 3.0859 )
+rotation = 0.184777
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -0.132433, 8.34327 )
@@ -51,12 +55,6 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.499317, 12.0591 )
+position = Vector2( 0.499317, 9.72313 )
 rotation = -0.0161861
 shape = SubResource( 2 )
-
-[node name="Tool" parent="." instance=ExtResource( 11 )]
-visible = false
-position = Vector2( 0.807161, 0.7862 )
-rotation = 0.02458
-scale = Vector2( 0.90758, 0.90758 )
